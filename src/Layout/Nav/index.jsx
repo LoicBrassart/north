@@ -1,22 +1,19 @@
 import {
   Ask,
-  // Crowd,
   Delete,
   Events,
   Groups,
   Home,
   Library,
-  // Market,
   Message,
   News,
   Parties,
-  // Search,
-  // Settings,
 } from './icons';
+import SNav from './style';
 
 function Nav() {
   return (
-    <nav>
+    <SNav>
       <ul>
         <li>
           <img src={Home} alt="Home" />
@@ -61,7 +58,7 @@ function Nav() {
           <span>Help</span>
         </li>
       </ul>
-    </nav>
+    </SNav>
   );
 }
 

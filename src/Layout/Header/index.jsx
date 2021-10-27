@@ -1,8 +1,9 @@
 import { Logo, Notif } from './icons';
+import SHeader from './style';
 
 function Header() {
   return (
-    <header>
+    <SHeader>
       <div className="flexer">
         <div className="centerer">
           <img src={Logo} alt="North Games - Home" />
@@ -17,7 +18,7 @@ function Header() {
         </div>
         <div className="centerer soon">DERANRAN</div>
       </div>
-    </header>
+    </SHeader>
   );
 }
 
