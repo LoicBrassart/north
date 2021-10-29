@@ -9,21 +9,20 @@ const SLayout = styled.div`
   grid-template-columns: 1fr 4fr;
   grid-template-rows: 1fr 7fr;
   grid-template-areas:
-    "header header"
-    "nav main";
+    'header header'
+    'nav main';
 
-  &> header {
+  & > header {
     grid-area: header;
   }
 
-  &> nav {
+  & > nav {
     grid-area: nav;
   }
 
-  &> main {
+  & > main {
     grid-area: main;
   }
-
-}`;
+`;
 
 export default SLayout;
