@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import {
   Ask,
   Delete,
@@ -16,16 +17,20 @@ function Nav() {
     <SNav>
       <ul>
         <li>
-          <img src={Home} alt="Home" />
-          <span>Home</span>
+          <Link to="/">
+            <img src={Home} alt="Home" />
+            <span>Home</span>
+          </Link>
         </li>
         <li>
           <img src={Message} alt="Messages" />
           <span>Messages</span>
         </li>
         <li>
-          <img src={News} alt="News" />
-          <span>News</span>
+          <Link to="/scenarii">
+            <img src={News} alt="Scenarii" />
+            <span>Scenarii</span>
+          </Link>
         </li>
         <li>
           <img src={Parties} alt="Parties" />
