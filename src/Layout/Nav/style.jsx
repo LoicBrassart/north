@@ -1,8 +1,12 @@
 import styled from 'styled-components';
 
 const SNav = styled.nav`
-  img {
-    height: 1.5em;
+  li {
+    height: 2em;
+
+    img {
+      height: 1.5em;
+    }
   }
 `;
 export default SNav;
