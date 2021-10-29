@@ -5,6 +5,7 @@ const SLayout = styled.div`
   color: white;
   background: linear-gradient(#146cbd, #0b2687);
 
+  /* ------------------------------------------------- Grid Layout */
   display: grid;
   grid-template-columns: 1fr 4fr;
   grid-template-rows: 1fr 7fr;
@@ -22,6 +23,21 @@ const SLayout = styled.div`
 
   & > main {
     grid-area: main;
+  }
+
+  /* ------------------------------------------------- Helper classes */
+  .hidden {
+    display: none;
+  }
+
+  .centerer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .flexer {
+    display: flex;
   }
 `;
 

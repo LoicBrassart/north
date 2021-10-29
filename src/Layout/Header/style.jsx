@@ -1,11 +1,15 @@
 import styled from 'styled-components';
 
-const SNav = styled.header`
+const SHeader = styled.header`
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
+  justify-content: space-between;
 
-  img {
-    height: 3.5em;
+  .logo {
+    height: 4.5em;
+  }
+  .avatar {
+    height: 1.5em;
   }
 `;
-export default SNav;
+export default SHeader;
