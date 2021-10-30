@@ -1,0 +1,29 @@
+[
+  {
+    "_id": 1,
+    "title": "Claude, François et les autres",
+    "_game": [1],
+    "synopsis": " Un démon décide de lâcher dans les rues des hordes de clones de Claude François et des Claudettes... ",
+    "quality": 3,
+    "utility": 4,
+    "idea": 4
+  },
+  {
+    "_id": 2,
+    "title": "Campagne Cerbère.org 1 - Camp Gobelin",
+    "_game": [2],
+    "synopsis": "Ce petit scénario initiatique, prévu pour des personnages de niveau 1, entraînera vos joueurs débutants sur les traces d'un groupe de gobelins kidnappant les enfants des alentours du hameau de Miral. Ils devront mettre un terme à la menace gobelinoïde en investissant leur campement et en tentant de comprendre où sont envoyés les enfants. Scénario pour personnage de niveau 1-2. PRÉSENTATION : Pour faire jouer ce scénario, vous avez besoin des 3 livres de base de DD3. Important ...",
+    "quality": 3,
+    "utility": 4,
+    "idea": 4
+  },
+  {
+    "_id": 3,
+    "title": "Campagne Cerbère.org 2 - Travaux forcés",
+    "_game": [2],
+    "synopsis": "Suite du camp gobelin, ce scénario entraînera vos joueurs dans les couloirs d’une vielle mine, où les enfants kidnappés travaillent sous le joug de leurs bourreaux. Qu’ils parviennent ou non à stopper l’activité de la mine, les joueurs commenceront à comprendre que quelqu’un se cache derrière ces sombres méfaits.",
+    "quality": 3,
+    "utility": 4,
+    "idea": 4
+  }
+]

@@ -1,0 +1,9 @@
+[
+  {
+    "_id": 1,
+    "_admins": [1],
+    "_members": [1],
+    "title": "La compagnie du Chien Rugissant",
+    "isPublic": false
+  }
+]
