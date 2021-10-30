@@ -9,6 +9,7 @@ const SNav = styled.nav`
     height: 2em;
     font-size: 1em;
     text-transform: uppercase;
+    margin: 0 1em;
 
     a,
     a:visited {
