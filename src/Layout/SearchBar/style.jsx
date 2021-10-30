@@ -58,6 +58,7 @@ const SSearchBar = styled.div`
       p {
         color: grey;
         text-align: center;
+        margin: 1em;
       }
 
       ul {
