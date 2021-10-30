@@ -1,6 +1,7 @@
 [
   {
     "_id": 1,
+    "searchName": "Avatar",
     "pseudo": "Avatar",
     "avatar": "https://ih1.redbubble.net/image.743614561.5386/flat,750x,075,f-pad,750x1000,f8f8f8.u1.jpg",
     "email": "avatar@spamland.com",

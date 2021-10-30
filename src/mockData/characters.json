@@ -1,6 +1,7 @@
 [
   {
     "_id": 1,
+    "searchName": "A'misandra",
     "name": "A'misandra",
     "bio": " A'misandra is a nurse of the lizardfolk. She wears a slightly oversized nurse's gown like a cloak because it reminds her of her aristocratic roots. As one might expect of that lineage, grace and refinement are evident in her bearing and behavior. For her, teatime after a hard day's work is a particular treat.",
     "tags": ["healer", "lizardfolk", "female", "medic", "terrabattle"]
