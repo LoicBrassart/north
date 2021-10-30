@@ -1,16 +1,12 @@
-import { Logo, Notif } from './icons';
+import SearchBar from 'Layout/SearchBar';
+import Notif from './icons';
 import SHeader from './style';
 
-function Header() {
+export default function Header() {
   return (
     <SHeader>
       <div className="flexer">
-        <div className="centerer">
-          <img src={Logo} alt="North Games - Home" className="logo" />
-        </div>
-        <div className="centerer">
-          <input type="search" />
-        </div>
+        <SearchBar />
       </div>
       <div className="flexer">
         <div className="centerer">
@@ -21,5 +17,3 @@ function Header() {
     </SHeader>
   );
 }
-
-export default Header;
