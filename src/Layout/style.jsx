@@ -10,8 +10,12 @@ const SLayout = styled.div`
   grid-template-columns: 1fr 4fr;
   grid-template-rows: 1fr 7fr;
   grid-template-areas:
-    'header header'
+    'logo header'
     'nav main';
+
+  & > a {
+    grid-area: logo;
+  }
 
   & > header {
     grid-area: header;
@@ -26,10 +30,6 @@ const SLayout = styled.div`
   }
 
   /* ------------------------------------------------- Helper classes */
-  .hidden {
-    display: none;
-  }
-
   .centerer {
     display: flex;
     justify-content: center;

@@ -1,12 +1,14 @@
 [
   {
     "_id": 1,
+    "searchName": "In Nomine Satanis / Magna Veritas",
     "name": "In Nomine Satanis / Magna Veritas",
     "desription": null,
     "banner": null
   },
   {
     "_id": 2,
+    "searchName": "Donjons et Dragons",
     "name": "Donjons et Dragons",
     "desription": null,
     "banner": null
