@@ -7,10 +7,10 @@ import SLayout from './style';
 export default function Layout({ children }) {
   return (
     <SLayout>
+      {children}
       <Logo />
       <Header />
       <Nav />
-      {children}
     </SLayout>
   );
 }

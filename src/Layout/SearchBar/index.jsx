@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { v4 as uuid } from 'uuid';
 import PropTypes from 'prop-types';
 import {
@@ -10,6 +10,7 @@ import {
   mockScenarii,
   mockUsers,
 } from 'mockData';
+import { useHistory } from 'react-router-dom';
 import SSearchBar from './style';
 
 function SubMenu({ title, items }) {
@@ -39,6 +40,15 @@ export default function SearchBar() {
     scenarii: [],
     others: [],
   });
+  const history = useHistory();
+
+  useEffect(() => {
+    const onLeave = history.listen(() => {
+      setNeedle('');
+    });
+    return onLeave;
+  }, []);
+
   const updateNeedle = (evt) => {
     setNeedle(evt.target.value);
 
