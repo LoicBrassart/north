@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
-import { v4 as uuid } from 'uuid';
+import { useHistory } from 'react-router-dom';
 import PropTypes from 'prop-types';
+import { v4 as uuid } from 'uuid';
 import {
   mockBlog,
   mockCharacters,
@@ -10,7 +11,6 @@ import {
   mockScenarii,
   mockUsers,
 } from 'mockData';
-import { useHistory } from 'react-router-dom';
 import SSearchBar from './style';
 
 function SubMenu({ title, items }) {

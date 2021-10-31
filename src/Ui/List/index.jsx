@@ -14,10 +14,6 @@ function Compo({ type, item }) {
     );
   return createElement(Entities[type], { key: uuid(), ...item });
 }
-Compo.propTypes = {
-  item: PropTypes.objectOf(PropTypes.object).isRequired,
-  type: PropTypes.string.isRequired,
-};
 
 export default function List({ data, title, type }) {
   return (
@@ -31,6 +27,11 @@ export default function List({ data, title, type }) {
     </SList>
   );
 }
+
+Compo.propTypes = {
+  item: PropTypes.objectOf(PropTypes.object).isRequired,
+  type: PropTypes.string.isRequired,
+};
 
 List.propTypes = {
   data: PropTypes.arrayOf(PropTypes.object).isRequired,
