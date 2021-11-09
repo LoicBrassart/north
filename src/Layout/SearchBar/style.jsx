@@ -30,6 +30,7 @@ const SSearchBar = styled.div`
     background-color: white;
     color: black;
     border-radius: 0 0 5px 5px;
+    overflow: hidden;
 
     width: 100%;
     position: absolute;
@@ -44,29 +45,15 @@ const SSearchBar = styled.div`
       width: calc(${width} / 3);
       margin-top: 0.3em;
 
-      &:nth-of-type(2n) li:nth-of-type(2n + 1),
-      &:nth-of-type(2n + 1) li:nth-of-type(2n) {
-        background-color: #eee;
-      }
-
       h2 {
         color: darkblue;
         font-weight: bold;
         text-transform: uppercase;
       }
 
-      p {
-        color: grey;
-        text-align: center;
-        margin: 1em;
-      }
-
-      ul {
+      > ul,
+      > p {
         height: 9em;
-
-        li {
-          height: 3em;
-        }
       }
     }
   }

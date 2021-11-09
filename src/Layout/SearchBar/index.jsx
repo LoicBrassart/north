@@ -1,27 +1,40 @@
 import { useEffect, useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import { v4 as uuid } from 'uuid';
-import {
-  mockBlog,
-  mockCharacters,
-  mockGames,
-  mockNews,
-  mockParties,
-  mockScenarii,
-  mockUsers,
-} from 'mockData';
+import axios from 'axios';
+import { List } from 'Ui';
 import SSearchBar from './style';
 
 function SubMenu({ title, items }) {
+  let type;
+  switch (title) {
+    case 'Utilisateurs':
+      type = 'UserResult';
+      break;
+    case 'Personnages':
+      type = 'UserResult';
+      break;
+    case 'Articles':
+      type = 'NewsResult';
+      break;
+    case 'Jeux':
+      type = 'GameResult';
+      break;
+    case 'Scenarii':
+      type = 'UserResult';
+      break;
+    case 'Others':
+      type = 'UserResult';
+      break;
+    default:
+      type = 'Kweh ?';
+  }
   return (
     <li className="SubMenu">
       <h2 className="centerer">{title}</h2>
       {items.length ? (
         <ul>
-          {items.map((item) => {
-            return <li key={uuid()}>{item.searchName}</li>;
-          })}
+          <List data={items} type={type} />
         </ul>
       ) : (
         <p className="centerer">¯\_(ツ)_/¯</p>
@@ -49,30 +62,18 @@ export default function SearchBar() {
     return onLeave;
   }, []);
 
+  useEffect(() => {
+    if (needle) {
+      axios
+        .get(`http://localhost:5050/search?needle=${needle}`)
+        .then(({ data }) => {
+          setResults(data);
+        });
+    }
+  }, [needle]);
+
   const updateNeedle = (evt) => {
     setNeedle(evt.target.value);
-
-    // ------ MOCK
-    if (evt.target.value === '42') {
-      setResults({
-        users: mockUsers,
-        characters: mockCharacters,
-        articles: mockNews,
-        games: mockGames,
-        scenarii: mockScenarii,
-        others: [...mockParties, ...mockBlog],
-      });
-    } else {
-      setResults({
-        users: [],
-        characters: [],
-        articles: [],
-        games: [],
-        scenarii: [],
-        others: [],
-      });
-    }
-    // ------ /MOCK
   };
 
   return (

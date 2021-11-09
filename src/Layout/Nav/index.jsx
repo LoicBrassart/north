@@ -67,13 +67,13 @@ function Nav() {
       </ul>
       <ul>
         <li>
-          <Link to="/scenarii" className="flexer">
+          <Link to="/" className="flexer">
             <img src={Delete} alt="Settings" />
             <p className="centerer">Settings</p>
           </Link>
         </li>
         <li>
-          <Link to="/scenarii" className="flexer">
+          <Link to="/" className="flexer">
             <img src={Ask} alt="Search" />
             <p className="centerer">Help</p>
           </Link>

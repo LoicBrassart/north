@@ -22,6 +22,16 @@ const SNewsCard = styled(Link)`
       position: absolute;
       bottom: 0;
       height: 40%;
+      color: white;
+      text-transform: uppercase;
+      line-height: 1.3em;
+
+      h2 {
+        font-size: 1.1em;
+      }
+      p {
+        font-size: 0.9em;
+      }
     }
   }
 `;

@@ -1,3 +1,4 @@
 import NewsCard from './Card';
+import NewsResult from './Result';
 
-export default NewsCard;
+export { NewsCard, NewsResult };
