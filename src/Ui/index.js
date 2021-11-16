@@ -1,5 +1,4 @@
 import List from './List';
+import ThemeToggler from './ThemeToggler';
 
-const toto = 42;
-
-export { List, toto };
+export { List, ThemeToggler };
