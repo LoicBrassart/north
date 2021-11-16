@@ -1,23 +1,27 @@
 import { Switch, Route } from 'react-router-dom';
-import { ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 import Layout from 'Layout';
 import { HomePage, ScenariiPage } from 'Pages';
-import SApp from './SApp';
+import useDarkTheme from 'Hooks';
+import { ThemeProvider } from 'styled-components';
+import { ThemeToggler } from 'Ui';
+import { lightTheme, darkTheme } from 'Themes/themes';
+import GlobalStyles from 'Themes/GlobalStyle';
 
 function App() {
+  const [theme, themeToggler] = useDarkTheme();
+  const selectedTheme = theme === 'light' ? darkTheme : lightTheme;
+
   return (
-    <SApp>
+    <ThemeProvider theme={selectedTheme}>
+      <GlobalStyles />
       <Layout>
-        <main>
-          <Switch>
-            <Route exact path="/" component={HomePage} />
-            <Route exact path="/scenarii" component={ScenariiPage} />
-          </Switch>
-        </main>
+        <Switch>
+          <Route exact path="/" component={HomePage} />
+          <Route exact path="/scenarii" component={ScenariiPage} />
+        </Switch>
       </Layout>
-      <ToastContainer position="bottom-right" />
-    </SApp>
+      <ThemeToggler toggler={themeToggler} />
+    </ThemeProvider>
   );
 }
 
