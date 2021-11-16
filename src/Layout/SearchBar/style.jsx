@@ -59,4 +59,34 @@ const SSearchBar = styled.div`
   }
 `;
 
-export default SSearchBar;
+const SItem = styled.li`
+  a {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    height: 3em;
+    background-color: white;
+
+    &:hover {
+      background-color: lightblue;
+    }
+
+    .img {
+      width: 15%;
+      height: 100%;
+      background: ${(props) => `url(${props.src}) no-repeat center`};
+      background-size: contain;
+    }
+
+    p {
+      width: 85%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      padding-left: 5%;
+      color: darkblue;
+    }
+  }
+`;
+
+export { SSearchBar, SItem };

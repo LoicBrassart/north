@@ -3,10 +3,11 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Layout from 'Layout';
 import { HomePage, ScenariiPage } from 'Pages';
+import SApp from './SApp';
 
 function App() {
   return (
-    <>
+    <SApp>
       <Layout>
         <main>
           <Switch>
@@ -16,7 +17,7 @@ function App() {
         </main>
       </Layout>
       <ToastContainer position="bottom-right" />
-    </>
+    </SApp>
   );
 }
 

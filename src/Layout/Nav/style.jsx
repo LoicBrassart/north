@@ -11,10 +11,13 @@ const SNav = styled.nav`
     text-transform: uppercase;
     margin: 0 1em;
 
-    a,
-    a:visited {
-      text-decoration: none;
-      color: white;
+    p {
+      display: none;
+    }
+
+    &:hover p,
+    a.active p {
+      display: block;
     }
 
     img {

@@ -1,3 +1,3 @@
-import UserResult from './Result';
+import UserCard from './Card';
 
-export default UserResult;
+export default UserCard;

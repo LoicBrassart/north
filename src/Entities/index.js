@@ -1,5 +1,5 @@
-import { NewsCard, NewsResult } from './News';
-import GameResult from './Game';
-import UserResult from './User';
+import GameCard from './Game';
+import NewsCard from './News';
+import UserCard from './User';
 
-export default { NewsCard, NewsResult, GameResult, UserResult };
+export { GameCard, NewsCard, UserCard };

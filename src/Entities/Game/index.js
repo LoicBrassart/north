@@ -1,3 +1,3 @@
-import GameResult from './Result';
+import GameCard from './Card';
 
-export default GameResult;
+export default GameCard;

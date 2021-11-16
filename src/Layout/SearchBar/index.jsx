@@ -1,40 +1,25 @@
 import { useEffect, useState } from 'react';
-import { useHistory } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import axios from 'axios';
-import { List } from 'Ui';
-import SSearchBar from './style';
+import { SSearchBar, SItem } from './style';
 
 function SubMenu({ title, items }) {
-  let type;
-  switch (title) {
-    case 'Utilisateurs':
-      type = 'UserResult';
-      break;
-    case 'Personnages':
-      type = 'UserResult';
-      break;
-    case 'Articles':
-      type = 'NewsResult';
-      break;
-    case 'Jeux':
-      type = 'GameResult';
-      break;
-    case 'Scenarii':
-      type = 'UserResult';
-      break;
-    case 'Others':
-      type = 'UserResult';
-      break;
-    default:
-      type = 'Kweh ?';
-  }
   return (
     <li className="SubMenu">
       <h2 className="centerer">{title}</h2>
       {items.length ? (
         <ul>
-          <List data={items} type={type} />
+          {items
+            .filter((item, idx) => idx < 3)
+            .map(({ id, type, name, thumb }) => (
+              <SItem className="item" src={thumb} key={`${id}-${type}`}>
+                <Link to={`/${type}/${id}`}>
+                  <div className="img" />
+                  <p>{name}</p>
+                </Link>
+              </SItem>
+            ))}
         </ul>
       ) : (
         <p className="centerer">¯\_(ツ)_/¯</p>

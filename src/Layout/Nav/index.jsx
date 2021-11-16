@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import {
   Ask,
   Delete,
@@ -17,66 +17,95 @@ function Nav() {
     <SNav>
       <ul>
         <li>
-          <Link to="/" className="flexer">
+          <NavLink exact to="/" className="flexer" activeClassName="active">
             <img src={Home} alt="Home" />
-            <p className="centerer">Home</p>
-          </Link>
+            <p>Home</p>
+          </NavLink>
         </li>
         <li>
-          <Link to="/" className="flexer">
+          <NavLink
+            exact
+            to="/messages"
+            className="flexer"
+            activeClassName="active"
+          >
             <img src={Message} alt="Messages" />
-            <p className="centerer">Messages</p>
-          </Link>
+            <p>Messages</p>
+          </NavLink>
         </li>
         <li>
-          <Link to="/scenarii" className="flexer">
+          <NavLink
+            exact
+            to="/scenarii"
+            className="flexer"
+            activeClassName="active"
+          >
             <img src={News} alt="Scenarii" />
-            <p className="centerer">Scenarii</p>
-          </Link>
+            <p>Scenarii</p>
+          </NavLink>
         </li>
         <li>
-          <Link to="/" className="flexer">
+          <NavLink
+            exact
+            to="/parties"
+            className="flexer"
+            activeClassName="active"
+          >
             <img src={Parties} alt="Parties" />
-            <p className="centerer">Parties</p>
-          </Link>
+            <p>Parties</p>
+          </NavLink>
         </li>
         <li>
-          <Link to="/" className="flexer">
+          <NavLink
+            exact
+            to="/groups"
+            className="flexer"
+            activeClassName="active"
+          >
             <img src={Groups} alt="Groups" />
-            <p className="centerer">Group</p>
-          </Link>
+            <p>Group</p>
+          </NavLink>
         </li>
         <li>
-          <Link to="/" className="flexer">
+          <NavLink
+            exact
+            to="/events"
+            className="flexer"
+            activeClassName="active"
+          >
             <img src={Events} alt="Events" />
-            <p className="centerer">Event</p>
-          </Link>
+            <p>Event</p>
+          </NavLink>
         </li>
         <li>
-          <Link to="/" className="flexer">
+          <NavLink
+            exact
+            to="/library"
+            className="flexer"
+            activeClassName="active"
+          >
             <img src={Library} alt="Library" />
-            <p className="centerer">Library</p>
-          </Link>
-        </li>
-        <li>
-          <Link to="/" className="flexer">
-            <img src={Home} alt="Home" />
-            <p className="centerer">Home</p>
-          </Link>
+            <p>Library</p>
+          </NavLink>
         </li>
       </ul>
       <ul>
         <li>
-          <Link to="/" className="flexer">
+          <NavLink
+            exact
+            to="/settings"
+            className="flexer"
+            activeClassName="active"
+          >
             <img src={Delete} alt="Settings" />
-            <p className="centerer">Settings</p>
-          </Link>
+            <p>Settings</p>
+          </NavLink>
         </li>
         <li>
-          <Link to="/" className="flexer">
+          <NavLink exact to="/help" className="flexer" activeClassName="active">
             <img src={Ask} alt="Search" />
-            <p className="centerer">Help</p>
-          </Link>
+            <p>Help</p>
+          </NavLink>
         </li>
       </ul>
     </SNav>
