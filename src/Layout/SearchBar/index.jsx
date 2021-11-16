@@ -50,7 +50,7 @@ export default function SearchBar() {
   useEffect(() => {
     if (needle) {
       axios
-        .get(`http://localhost:5050/search?needle=${needle}`)
+        .get(`http://localhost:8080/search?needle=${needle}`)
         .then(({ data }) => {
           setResults(data);
         });
