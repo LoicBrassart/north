@@ -11,7 +11,7 @@ export default (state = initialState, action) => {
     case 'USER_LOGIN':
       return { ...state, ...load };
     case 'USER_LOGOUT':
-      return { initialState };
+      return { ...initialState };
     default:
       return state;
   }
