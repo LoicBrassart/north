@@ -1,17 +1,16 @@
-import { useState } from 'react';
-import { mockUsers } from 'mockData';
+import { useSelector } from 'react-redux';
 import SearchBar from 'Layout/SearchBar';
 import Notif from './icons';
 import SHeader from './style';
 
 export default function Header() {
-  const [user] = useState(mockUsers[0]);
+  const { avatar, pseudo } = useSelector((state) => state.user);
   return (
     <SHeader>
       <SearchBar />
       <div className="currentUser">
         <div className="centerer avatar">
-          <img src={user.avatar} alt={user.pseudo} />
+          <img src={avatar} alt={pseudo} />
         </div>
         <img src={Notif} alt="Notifications" className="notifications" />
       </div>

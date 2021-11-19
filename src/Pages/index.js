@@ -1,4 +1,5 @@
 import HomePage from './HomePage';
 import ScenariiPage from './ScenariiPage';
+import AuthPage from './AuthPage';
 
-export { HomePage, ScenariiPage };
+export { AuthPage, HomePage, ScenariiPage };
