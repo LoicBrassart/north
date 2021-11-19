@@ -3,7 +3,7 @@ import { Reset } from 'styled-reset';
 import { ThemeProvider } from 'styled-components';
 import Layout from 'Layout';
 import { AuthPage, HomePage, ScenariiPage } from 'Pages';
-import { useTheme } from 'Hooks';
+import useTheme from 'Hooks';
 import { ThemeToggler } from 'Ui';
 import { GlobalStyles } from 'Themes';
 
