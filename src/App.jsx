@@ -1,18 +1,16 @@
 import { Switch, Route } from 'react-router-dom';
 import Layout from 'Layout';
 import { HomePage, ScenariiPage } from 'Pages';
-import useDarkTheme from 'Hooks';
+import { useTheme } from 'Hooks';
 import { ThemeProvider } from 'styled-components';
 import { ThemeToggler } from 'Ui';
-import { lightTheme, darkTheme } from 'Themes/themes';
-import GlobalStyles from 'Themes/GlobalStyle';
+import { GlobalStyles } from 'Themes';
 
 function App() {
-  const [theme, themeToggler] = useDarkTheme();
-  const selectedTheme = theme === 'light' ? darkTheme : lightTheme;
+  const [theme, themeToggler] = useTheme();
 
   return (
-    <ThemeProvider theme={selectedTheme}>
+    <ThemeProvider theme={theme}>
       <GlobalStyles />
       <Layout>
         <Switch>

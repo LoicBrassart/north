@@ -1,11 +1,27 @@
-export const lightTheme = {
-  background: '#fff',
-  color: '#1d1f28',
-  buttonBg: '#c5718d',
-};
-
-export const darkTheme = {
-  background: '#1d1f28',
-  color: '#fafafa',
-  buttonBg: '#515d90',
-};
+export default [
+  {
+    name: 'Vanilla',
+    code: 'vanilla',
+    modifiers: [],
+  },
+  {
+    name: 'Dark Mode',
+    code: 'dark',
+    modifiers: ['darkColors'],
+  },
+  {
+    name: "I'm blue",
+    code: 'blue',
+    modifiers: ['blueColors'],
+  },
+  {
+    name: 'May there be Light',
+    code: 'light',
+    modifiers: ['paleColors'],
+  },
+  {
+    name: 'May there be Light (but smaller)',
+    code: 'smallLight',
+    modifiers: ['paleColors', 'smallFonts'],
+  },
+];

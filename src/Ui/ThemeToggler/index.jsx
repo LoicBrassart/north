@@ -1,11 +1,23 @@
 import PropTypes from 'prop-types';
-import SThemeToggler from './style';
+import { themes } from 'Themes';
 
 const ThemeToggler = ({ toggler }) => {
   return (
-    <SThemeToggler type="button" onClick={toggler}>
-      Switch Theme ☀️ 🌙
-    </SThemeToggler>
+    <select
+      type="button"
+      onChange={(evt) => {
+        toggler(evt.target.value);
+      }}
+    >
+      <option value="">--Switch Theme ☀️ 🌙--</option>
+      {themes.map((theme) => {
+        return (
+          <option key={theme.code} value={theme.code}>
+            {theme.name}
+          </option>
+        );
+      })}
+    </select>
   );
 };
 

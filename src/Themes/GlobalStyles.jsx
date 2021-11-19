@@ -3,18 +3,18 @@ import { createGlobalStyle } from 'styled-components';
 const GlobalStyles = createGlobalStyle`
   body {
     color: ${({ theme }) => theme.color};
-    transition: all 0.30s linear;
+    transition: all 0.1s linear;
 
     min-height: 100vh;
-    color: white;
     background: ${({ theme }) => theme.background};
-    font-family: 'Avenir LT Std', sans-serif;
+    font-family: ${({ theme }) => theme.fontFamily};
+    font-size: ${({ theme }) => theme.fontSize};
   }
 
   a,
   a:visited {
     text-decoration: none;
-    color: white;
+    color: ${({ theme }) => theme.color};
   }
 
   /* ------------------------------------------------- Helper classes */

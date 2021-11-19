@@ -1,3 +1,7 @@
-import useDarkTheme from './useDarkTheme';
+import useTheme from './useTheme';
 
-export default useDarkTheme;
+const useApi = () => {
+  console.warn('Soon to come');
+};
+
+export { useTheme, useApi };
