@@ -1,3 +1,3 @@
-export default function CharacterList() {
-  return <>I iz a CharacterList</>;
+export default function GameList() {
+  return <>I iz a GameList</>;
 }

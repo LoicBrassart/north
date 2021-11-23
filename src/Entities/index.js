@@ -1,6 +1,3 @@
-import GameCard from './Game';
-import NewsCard from './News';
-import UserCard from './User';
 import {
   CharacterBadge,
   CharacterCard,
@@ -8,6 +5,9 @@ import {
   CharacterForm,
   CharacterList,
 } from './Character';
+import { GameBadge, GameCard, GameDetails, GameForm, GameList } from './Game';
+import { NewsBadge, NewsCard, NewsDetails, NewsForm, NewsList } from './News';
+import { UserBadge, UserCard, UserDetails, UserForm, UserList } from './User';
 
 export {
   CharacterBadge,
@@ -15,7 +15,19 @@ export {
   CharacterDetails,
   CharacterForm,
   CharacterList,
+  GameBadge,
   GameCard,
+  GameDetails,
+  GameForm,
+  GameList,
+  NewsBadge,
   NewsCard,
+  NewsDetails,
+  NewsForm,
+  NewsList,
+  UserBadge,
   UserCard,
+  UserDetails,
+  UserForm,
+  UserList,
 };
