@@ -2,7 +2,7 @@ import { Switch, Route } from 'react-router-dom';
 import { Reset } from 'styled-reset';
 import { ThemeProvider } from 'styled-components';
 import Layout from 'Layout';
-import { AuthPage, HomePage, ScenariiPage } from 'Pages';
+import { AuthPage, HomePage, ScenariiPage, Err404Page } from 'Pages';
 import useTheme from 'Hooks';
 import { ThemeToggler } from 'Ui';
 import { GlobalStyles } from 'Themes';
@@ -19,6 +19,7 @@ function App() {
           <Route exact path="/" component={HomePage} />
           <Route exact path="/auth" component={AuthPage} />
           <Route exact path="/scenarii" component={ScenariiPage} />
+          <Route path="/" component={Err404Page} />
         </Switch>
       </Layout>
       <ThemeToggler toggler={themeToggler} />
